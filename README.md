@@ -2,6 +2,8 @@
 
 A modern, responsive banking application built with Next.js, TypeScript, and Tailwind CSS. This application replicates the Aspire banking interface with pixel-perfect design fidelity and comprehensive functionality.
 
+Deployed URL - https://aspire-web-app-dusky.vercel.app/cards
+
 ## 🚀 Features
 
 ### Core Functionality
@@ -40,6 +42,8 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+5. Live URL - https://aspire-web-app-dusky.vercel.app/cards
+
 ## 📱 Usage
 
 ### Adding a New Card
@@ -55,67 +59,6 @@ npm run dev
 ### Responsive Design
 - **Desktop**: Full sidebar navigation with transaction panel
 - **Mobile**: Bottom navigation bar with optimized layout
-
-## 🏗️ Architecture
-
-### File Structure
-\`\`\`
-├── app/
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-├── components/
-│   ├── AddCardModal.tsx
-│   ├── Card.tsx
-│   ├── CardActions.tsx
-│   ├── Sidebar.tsx
-│   └── TransactionList.tsx
-├── contexts/
-│   └── AppContext.tsx
-├── hooks/
-│   └── useMediaQuery.ts
-├── lib/
-│   └── utils.ts
-└── types/
-    └── index.ts
-\`\`\`
-
-### State Management
-The application uses React Context API for global state management:
-- **Cards**: Array of card objects with freeze status
-- **Transactions**: Transaction history data
-- **UI State**: Current card index, show/hide card numbers, active tabs
-
-### Data Persistence
-- Cards and balance are automatically saved to localStorage
-- Data persists across browser sessions
-- Automatic loading on application startup
-
-## 🎨 Design System
-
-### Colors
-- **Primary Green**: `#10B981` (Emerald-500)
-- **Primary Blue**: `#3B82F6` (Blue-500)
-- **Background**: `#F9FAFB` (Gray-50)
-- **Card Background**: `#1F2937` (Gray-800)
-
-### Typography
-- **Font Family**: Inter
-- **Headings**: Semibold weights
-- **Body**: Regular weights
-- **Monospace**: Card numbers
-
-## 🧪 Testing
-
-Run tests with:
-\`\`\`bash
-npm test
-\`\`\`
-
-For watch mode:
-\`\`\`bash
-npm run test:watch
-\`\`\`
 
 ## 🚀 Deployment
 
